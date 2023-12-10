@@ -24,9 +24,10 @@
 
 #### **Identification of Entities:**
 ⇾ **Secretary**
-<u>Attributes: id, firstName, lastName, username, password, phone</u>
+<u>Attributes: id, firstName, lastName, username, password, phone</u> 
+<br>
 ⇾ **Client** 
-<u>Attributes: id, firstName, lastName, phone</u>
+<u>Attributes: id, firstName, lastName, phone</u> <br>
 ⇾ **Driver** 
 <u>Attributes: id, firstName, lastName, phone</u>
 ⇾ **Orders**
