@@ -43,7 +43,7 @@
 <u>Attributes: id, manufacturer, capacity, purchaseYear, productionYear</u>
 <br>
 ⇾ **Payment** <br>
-<u>Attributes: id, amount, method, date</u>
+<p><u>Attributes: id, amount, method, date</u></p>
 </details>
 
 ### 3.1 Entity Relation Diagram
