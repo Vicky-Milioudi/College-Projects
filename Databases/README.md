@@ -23,20 +23,25 @@
 </summary>
 
 #### **Identification of Entities:**
-⇾ **Secretary**
+⇾ **Secretary** <br>
 <u>Attributes: id, firstName, lastName, username, password, phone</u> 
 <br>
-⇾ **Client** 
-<u>Attributes: id, firstName, lastName, phone</u> <br>
-⇾ **Driver** 
+⇾ **Client** <br>
+<u>Attributes: id, firstName, lastName, phone</u> 
+<br>
+⇾ **Driver** <br>
 <u>Attributes: id, firstName, lastName, phone</u>
-⇾ **Orders**
+<br>
+⇾ **Orders** <br>
 <u>Attributes: id, price, status</u>
-⇾ **Delivery**
+<br>
+⇾ **Delivery**<br>
 <u>Attributes: id, date, pCity, pStreet, pNumber, pPostalCode, dCity, dStreet, dNumber, dPostalCode</u>
-⇾ **Truck**
+<br>
+⇾ **Truck** <br>
 <u>Attributes: id, manufacturer, capacity, purchaseYear, productionYear</u>
-⇾ **Payment**
+<br>
+⇾ **Payment** <br>
 <u>Attributes: id, amount, method, date</u>
 </details>
 
