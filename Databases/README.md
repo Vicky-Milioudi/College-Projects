@@ -1,7 +1,7 @@
 # <h1 style="text-align: center"> Database Project - Moving Company Managment System
 ---
 ---
-### ☰ Contents
+## ☰ Contents
 - [<span style=color:black> <u>**1. Project Description**</u>](#1-project-description)</span>
 - [<span style=color:black> <u>**2. Project Overview**</u>](#2-project-overview)</span>
 - [<span style=color:black> <u>**3. Basic Structure**</u>](#3-basic-structure)</span>
@@ -10,19 +10,19 @@
 - [<span style=color:black> <u>**4. Tools Used**</u>](#4-tools-used)</span>
 - [<span style=color:black> <u>**5. Demo**</u>](#5-demo)</span>
 
-#### 1. Project Description 
+## 1. Project Description 
 📄 As a part of our university curriculum, we made this project for "Databases (DB)". This project combines theory with practical **_SQL_** implementation. In this project, I collaborated with my team (**Nefeli & Thanasis 🫂**) to develop a <i>real-world</i> 📦🚛 Moving Company Management System for a small business
 
-#### 2. Project Overview
+## 2. Project Overview
 🎯We started by designing the  `Entity-Relationship Diagram [ERD]`, then created the `Relational Model [RM]`, and finally implemented the project using *phpMyAdmin*. The project involved the creation of multiple tables and meticulous data management in MySQL. The project included making *tables*, *views*, *indexes*, *transactions*, *cursors*, *triggers*, and *stored procedures* in MySQL. We also developed a `dynamic website`.
 
-#### 3. Basic Structure
+## 3. Basic Structure
 <details>
 <summary>
 🔎 Click here to see the basic structure of project! 🖱️
 </summary>
 
-##### **Identification of Entities:**
+#### **Identification of Entities:**
 ⇾ **Secretary**
 <u>Attributes: id, firstName, lastName, username, password, phone</u>
 ⇾ **Client** 
@@ -39,15 +39,15 @@
 <u>Attributes: id, amount, method, date</u>
 </details>
 
-##### 3.1 Entity Relation Diagram
+### 3.1 Entity Relation Diagram
 🔜 *[Coming Soon]* Designed in Figma
 ![ERD]()
 
-##### 3.2 Relational Database Schema
+### 3.2 Relational Database Schema
 🔜 *[Coming Soon]* Designed in Figma
 ![RM]()
 
-#### 4. Tools Used
+## 4. Tools Used
 <p align="left">   
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="50" height="50"/>
@@ -58,6 +58,6 @@
 <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="50" height="50"/> 
 </p>
 
-####  5. Demo
+##  5. Demo
 🔜 *[Coming Soon]* `Check out the Demo!▶️`
 
