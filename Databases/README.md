@@ -25,25 +25,25 @@
 #### **Identification of Entities:**
 ⇾ **Secretary**
  <br>
-<u>Attributes: id, firstName, lastName, username, password, phone</u> 
+<ins>Attributes: id, firstName, lastName, username, password, phone</ins>
 <br>
 ⇾ **Client** <br>
-<u>Attributes: id, firstName, lastName, phone</u> 
+<ins>Attributes: id, firstName, lastName, phone</ins>
 <br>
 ⇾ **Driver** <br>
-<u>Attributes: id, firstName, lastName, phone</u>
+<ins>Attributes: id, firstName, lastName, phone</ins>
 <br>
 ⇾ **Orders** <br>
-<u>Attributes: id, price, status</u>
+<ins>Attributes: id, price, status</ins>
 <br>
 ⇾ **Delivery**<br>
-<u>Attributes: id, date, pCity, pStreet, pNumber, pPostalCode, dCity, dStreet, dNumber, dPostalCode</u>
+<ins>Attributes: id, date, pCity, pStreet, pNumber, pPostalCode, dCity, dStreet, dNumber, dPostalCode</ins>
 <br>
 ⇾ **Truck** <br>
-<u>Attributes: id, manufacturer, capacity, purchaseYear, productionYear</u>
+<ins>Attributes: id, manufacturer, capacity, purchaseYear, productionYear</ins>
 <br>
 ⇾ **Payment** <br>
-<p><u>Attributes: id, amount, method, date</u></p>
+<ins>Attributes: id, amount, method, date</ins>
 </details>
 
 ### 3.1 Entity Relation Diagram
