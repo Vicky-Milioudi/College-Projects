@@ -23,7 +23,8 @@
 </summary>
 
 #### **Identification of Entities:**
-⇾ **Secretary** <br>
+⇾ **Secretary**
+ <br>
 <u>Attributes: id, firstName, lastName, username, password, phone</u> 
 <br>
 ⇾ **Client** <br>
