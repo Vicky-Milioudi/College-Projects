@@ -19,7 +19,7 @@
 ## 3. Basic Structure
 <details>
 <summary>
-🔎 Click here to see the basic structure of project! 🖱️
+🔎 Click here to see the basic structure of the project! 🖱️
 </summary>
 
 #### **Identification of Entities:**
