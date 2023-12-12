@@ -1,4 +1,4 @@
-# <h1 style="text-align: center"> Database Project - Moving Company Managment System
+# <h1 style="text-align: center"> Database Project - Moving Company Management System
 ---
 ---
 ## ☰ Contents
