@@ -2,13 +2,19 @@
 ---
 ---
 ## ☰ Contents
-- [<span style=color:black> <u>**1. Project Description**</u>](#1-project-description)</span>
-- [<span style=color:black> <u>**2. Project Overview**</u>](#2-project-overview)</span>
-- [<span style=color:black> <u>**3. Basic Structure**</u>](#3-basic-structure)</span>
-  - [<span style=color:black> <u>**3.1 Entity Relation Diagram**</u>](#31-entity-relation-diagram)</span>
-  - [<span style=color:black> <u>**3.2 Relational Database Schema**</u>](#32-relational-database-schema)</span>
-- [<span style=color:black> <u>**4. Tools Used**</u>](#4-tools-used)</span>
-- [<span style=color:black> <u>**5. Demo**</u>](#5-demo)</span>
+  [**_1. Project Description_**](#1-project-description)
+  
+  [**_2. Project Overview_**](#2-project-overview)
+ 
+  [**_3. Basic Structure_**](#3-basic-structure)
+  
+  - [**_Entity Relation Diagram_**](#31-entity-relation-diagram)
+  
+  - [**_Relational Database Schema_**](#32-relational-database-schema)
+
+  [**_4. Tools Used_**](#4-tools-used)
+  
+  [**_5. Demo_**](#5-demo)
 
 ## 1. Project Description 
 📄 As a part of our university curriculum, we made this project for "Databases (DB)". This project combines theory with practical **_SQL_** implementation. In this project, I collaborated with my team (**Nefeli & Thanasis 🫂**) to develop a <i>real-world</i> 📦🚛 Moving Company Management System for a small business
