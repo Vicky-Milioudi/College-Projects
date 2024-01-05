@@ -119,8 +119,8 @@ CREATE TABLE manages(
     driverID VARCHAR(50) NOT NULL,
     
     CONSTRAINT pk_manages PRIMARY KEY (secretaryID, driverID),
-    CONSTRAINT fk_manages_secretaryId FOREIGN KEY(secretaryID) REFERENCES secretary(id),
-    CONSTRAINT fk_manages_driverId FOREIGN KEY(driverID) REFERENCES driver(id)
+    CONSTRAINT fk_manages_secretaryId FOREIGN KEY(secretaryID) REFERENCES secretary(id) ON DELETE NO ACTION ON UPDATE CASCADE,
+    CONSTRAINT fk_manages_driverId FOREIGN KEY(driverID) REFERENCES driver(id) ON DELETE NO ACTION ON UPDATE CASCADE
 );
 
 ---------- #10 create records table [RELATIONSHIP] ----------
@@ -129,6 +129,6 @@ CREATE TABLE records(
     ordersID VARCHAR(50) NOT NULL,
     
     CONSTRAINT pk_records PRIMARY KEY (secretaryID, ordersID),
-    CONSTRAINT fk_records_secretary FOREIGN KEY(secretaryID) REFERENCES secretary(id),
-    CONSTRAINT fk_records_ordersId FOREIGN KEY(ordersID) REFERENCES orders(id)
+    CONSTRAINT fk_records_secretary FOREIGN KEY(secretaryID) REFERENCES secretary(id) ON DELETE NO ACTION ON UPDATE CASCADE,
+    CONSTRAINT fk_records_ordersId FOREIGN KEY(ordersID) REFERENCES orders(id) ON DELETE NO ACTION ON UPDATE CASCADE
 );
