@@ -86,8 +86,8 @@ CREATE TABLE payment(
     orderID VARCHAR(50) NOT NULL UNIQUE,
      
     CONSTRAINT pk_payment PRIMARY KEY(id),
-    CONSTRAINT fk_payment_clientID FOREIGN KEY(clientID) REFERENCES client(id) ON DELETE CASCADE, 
-    CONSTRAINT fk_payment_orderID FOREIGN KEY(orderID) REFERENCES orders(id) ON DELETE CASCADE
+    CONSTRAINT fk_payment_clientID FOREIGN KEY(clientID) REFERENCES client(id) ON DELETE CASCADE ON UPDATE CASCADE, 
+    CONSTRAINT fk_payment_orderID FOREIGN KEY(orderID) REFERENCES orders(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 ---------- #8 create delivery table [ENTITY] ----------
@@ -109,8 +109,8 @@ CREATE TABLE delivery(
     
     CONSTRAINT pk_delivery PRIMARY KEY(id, ordersID),
     CONSTRAINT fk_delivery_ordersID FOREIGN KEY(ordersID) REFERENCES orders(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    CONSTRAINT fk_delivery_driverID FOREIGN KEY(driverID) REFERENCES driver(id) ON DELETE NO ACTION ,
-    CONSTRAINT fk_delivery_truckID FOREIGN KEY(truckID) REFERENCES truck(id) ON DELETE NO ACTION 
+    CONSTRAINT fk_delivery_driverID FOREIGN KEY(driverID) REFERENCES driver(id) ON DELETE NO ACTION ON UPDATE CASCADE,
+    CONSTRAINT fk_delivery_truckID FOREIGN KEY(truckID) REFERENCES truck(id) ON DELETE NO ACTION ON UPDATE CASCADE
 );
 
 ---------- #9 create manages table [RELATIONSHIP] ----------
