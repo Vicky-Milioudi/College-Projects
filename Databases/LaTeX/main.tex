@@ -1,0 +1,244 @@
+\documentclass[12pt,a4paper, twoside, notitlepage]{report}
+
+\usepackage{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,greek]{babel}
+\usepackage{alphabeta} 
+
+\usepackage{titling} %Add title page
+\usepackage{abstract} %Add abstract
+\usepackage{ragged2e} %Modify Abstract
+
+\usepackage{fancyhdr} %Add header and footer
+
+\usepackage{tocloft} %add table of contents
+\usepackage{titletoc} %modify titles in toc
+\usepackage{setspace} %modify space in toc
+
+\usepackage{appendix}
+\usepackage{titlesec} %modify appendix
+
+\usepackage[bookmarks == true]{hyperref} %pdf bookmarks
+\usepackage[open, openlevel = 0]{bookmark} %pdf bookmarks
+
+\usepackage{listings} %code block
+\usepackage{xcolor} %colors for code block
+
+\usepackage{tcolorbox}
+
+\usepackage{natbib} %for bibliotek
+\usepackage{cite}
+
+\usepackage{enumitem} %Bullets Points
+\usepackage{pifont} %Bullets Points Style
+
+\usepackage{graphicx} %Insert Images
+\usepackage{caption} %Insert Caption Images
+
+\usepackage{float}
+\usepackage{hyphenat}
+
+\usepackage{amssymb}
+
+%---------------------------------------------------------------------------------------------------------------
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+
+\setlength{\headheight}{14.5pt}  %solution for warnings
+\addtolength{\topmargin}{-2.5pt}  %solution for warnings
+
+%---------------------------------------------------------------------------------------------------------------
+\fancypagestyle{mystyle}{
+    \fancyhf{}
+    \fancyhead[R]{\foreignlanguage{greek}{Βάσεις Δεδομένων}}
+    \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+    \fancyfoot[L]{\foreignlanguage{greek}{Ομάδα: 8}}
+    \fancyfoot[C]{\thepage}
+    \fancyfoot[R]{2023-2024}
+}
+
+%---------------------------------------------------------------------------------------------------------------
+\renewenvironment{abstract}{\normalsize\quotation\centering\textbf{\Large\abstractname}\vspace{1em}\par\justifying}
+
+%---------------------------------------------------------------------------------------------------------------
+\titlecontents{chapter}[0em]{\bfseries\Large}{}{}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{section}[1em]{\normalfont\large}{\thecontentslabel\quad}{}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{subsection}[2em]{\normalfont}{\thecontentslabel\quad}{}{\titlerule*[1pc]{.}\contentspage}
+
+%---------------------------------------------------------------------------------------------------------------
+\definecolor{vscode-light-bg}{RGB}{240,240,240}   % Light gray background
+\definecolor{vscode-dark-fg}{RGB}{34,34,34}        % Dark foreground
+\definecolor{vscode-dark-comment}{RGB}{128,128,128} % Dark gray comments
+\definecolor{vscode-dark-string}{RGB}{255,125,0}   % Orange strings
+\definecolor{vscode-dark-keyword}{RGB}{170,43,226}  % Dark purple keywords
+
+\lstset{
+  language=SQL,
+  basicstyle=\color{vscode-dark-fg}\small\ttfamily,
+  keywordstyle=\color{vscode-dark-keyword},
+  commentstyle=\color{vscode-dark-comment},
+  stringstyle=\color{vscode-dark-string},
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{gray!50},     % Set the color of the frame
+  backgroundcolor=\color{gray!2},
+  numbers=left,               % Add line numbers to the left
+  numberstyle=\small\color{gray},  % Styling for line numbers
+  stepnumber=1,               % Line numbers every step line
+  numbersep=10pt,               % Space between line numbers and code
+  numberstyle=\small\color{black!70},  % Bigger and darker line numbers
+}
+
+%---------------------------------------------------------------------------------------------------------------
+\begin{document}
+
+\pagestyle{mystyle}
+
+%---------------------------------------------------------------------------------------------------------------
+\phantomsection
+\bookmark[page=1, level=0]{Εξώφυλλο}
+\input{chapters/00-title-page}
+
+\phantomsection
+\bookmark[page=2,level=0]{Περιεχόμενα}
+\singlespacing
+\tableofcontents
+\singlespacing
+\newpage
+
+\pagenumbering{arabic}
+\renewcommand{\chaptername}{Μέρος}
+\chapter[Μέρος 1: Σχεδιασμός Βάσης Δεδομένων]{Σχεδιασμός Βάσης Δεδομένων}
+\input{chapters/part1}
+
+\begin{figure}
+  \centering
+      \includegraphics[width=1\textwidth]{images/ER.png}
+  \captionsetup{labelfont=bf}
+  \caption{Διάγραμμα Οντοτήτων - Συσχετίσεων}
+\end{figure}
+
+\phantomsection
+\addcontentsline{toc}{section}{\protect\numberline{1.1}Διάγραμμα Οντοτήτων - Συσχετίσεων}
+
+\newpage
+\renewcommand{\chaptername}{Μέρος}
+\chapter[Μέρος 2: Ανάπτυξη Βάσης Δεδομένων]{Ανάπτυξη Βάσης Δεδομένων}
+\input{chapters/part2}
+\section{Σχεσιακό Διάγραμμα}
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=0.6\textwidth]{images/RS.png}
+  \captionsetup{labelfont=bf}
+  \caption{Σχεσιακό Διάγραμμα}
+\end{figure}
+
+\newpage
+\section{Ερωτήματα \foreignlanguage{english}{MySQL}}
+
+\selectlanguage{English}
+\input{chapters/codes blocks/db-queries1}
+\selectlanguage{greek}
+
+%---------------------------------------------------------------------------------------------------------------
+\newpage
+\renewcommand{\chaptername}{Μέρος}
+\chapter[Μέρος 3: Τελική Υλοποιήση Βάσης Δεδομένων]{Τελική Υλοποίηση Βάσης Δεδομένων}
+\section{Άσκηση}
+\input{chapters/part3-1}
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=0.8\textwidth]{images/diagram1.png}
+  \captionsetup{labelfont=bf}
+\end{figure}
+\input{chapters/part3-1-2}
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=0.8\textwidth]{images/diagram2.png}
+  \captionsetup{labelfont=bf}
+\end{figure}
+\hfill \break
+3. στη συνέχεια σε \foreignlanguage{english}{3NF}.
+\hfill \break
+
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=0.6\textwidth]{images/diagram3.png}
+  \captionsetup{labelfont=bf}
+\end{figure}
+
+\section{Κανονικοποίηση}
+\input{chapters/part3-1-3}
+\begin{figure}[h]
+  \centering
+      \includegraphics[width=1\textwidth]{images/diagram4.png}
+  \captionsetup{labelfont=bf}
+\end{figure}
+
+\section{Ερωτήματα \foreignlanguage{english}{MySQL}}
+\selectlanguage{English}
+\input{chapters/codes blocks/db-queries2}
+\selectlanguage{greek}
+
+\section{Ευρετήρια}
+\input{chapters/part3-2}
+\selectlanguage{English}
+\input{chapters/codes blocks/db-indexes}
+\selectlanguage{greek}
+
+\section{Όψεις}
+\input{chapters/part3-3}
+\selectlanguage{english}
+\input{chapters/codes blocks/db-views}
+\selectlanguage{greek}
+
+\section{Αποθηκευμένη Διαδικασία}
+\input{chapters/part3-4}
+\selectlanguage{english}
+\input{chapters/codes blocks/db-procedure}
+\selectlanguage{greek}
+
+\section{Αποθηκευμένη Συνάρτηση}
+\input{chapters/part3-5}
+\selectlanguage{english}
+\input{chapters/codes blocks/db-function}
+\selectlanguage{greek}
+
+\section{Συνναλαγή}
+\selectlanguage{english}
+\input{chapters/codes blocks/db-transaction}
+\selectlanguage{greek}
+
+\section{Σκανδάλη}
+\input{chapters/part3-7}
+\selectlanguage{English}
+\input{chapters/codes blocks/db-trigger}
+\selectlanguage{greek}
+
+%---------------------------------------------------------------------------------------------------------------
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{Κώδικας}{20pt}{\Huge}
+\begin{appendices}
+\chapter[Κώδικας: Τελική Υλοποιήση]{Τελική Υλοποίηση}
+
+\pagestyle{mystyle}
+\section*{Δημιουργία Βάσης Δεδομένων}
+\addcontentsline{toc}{section}{Δημιουργία Βάσης Δεδομένων}
+\selectlanguage{English}
+\input{chapters/codes blocks/db-create}
+\selectlanguage{greek}
+
+\section*{Εισαγωγή Δεδομένων}
+\addcontentsline{toc}{section}{Εισαγωγή Δείγματος Δεδομένων}
+\selectlanguage{English}
+\input{chapters/codes blocks/db-data}
+\selectlanguage{greek}
+\end{appendices}
+
+%---------------------------------------------------------------------------------------------------------------
+\nocite{elmasri2011fundamentals}
+
+\bibliographystyle{abbrv}
+\textlatin{\bibliography{references/bibl}}
+\addcontentsline{toc}{chapter}{Βιβλιογραφία}
+
+\end{document}
