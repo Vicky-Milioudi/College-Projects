@@ -1,0 +1,24 @@
+---------- Procedure ----------
+USE omada;
+
+-- Task: Create a function to retrieve the total number of deliveries for a specific driver
+DELIMITER !
+DROP FUNCTION IF EXISTS numberOfDeliveries;
+CREATE FUNCTION numberOfDeliveries(driverLastName VARCHAR(30))
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    DECLARE deliveryCount INT;
+
+    SELECT COUNT(*)
+    INTO deliveryCount
+    FROM delivery
+    INNER JOIN driver ON delivery.driverId = driver.id
+    WHERE driverLastName = driver.lastName;
+
+    RETURN deliveryCount;
+END!
+DELIMITER ;
+
+-- To show the results of the procedure
+SELECT numberOfDeliveries("Aggelidis") AS "The Total Number of Deliveries";
