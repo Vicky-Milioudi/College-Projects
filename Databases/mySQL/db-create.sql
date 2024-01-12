@@ -1,4 +1,4 @@
----------- SQL DATABASE ---------- Omada8
+---------- SQL DATABASE ----------
 
 ---------- CREATE DATABASE ----------
 
