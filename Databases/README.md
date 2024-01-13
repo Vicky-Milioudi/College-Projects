@@ -9,13 +9,9 @@
   [**_3. Basic Structure_**](#3-basic-structure)
   
   - [**_Entity Relation Diagram_**](#31-entity-relation-diagram)
-  
-  - [**_Relational Database Schema_**](#32-relational-database-schema)
 
   [**_4. Tools Used_**](#4-tools-used)
   
-  [**_5. Demo_**](#5-demo)
-
 ## 1. Project Description 
 📄 As a part of our university curriculum, we made this project for "Databases (DB)". This project combines theory with practical **_SQL_** implementation. In this project, I collaborated with my team (**Nefeli & Thanasis 🫂**) to develop a <i>real-world</i> 📦🚛 Moving Company Management System for a small business
 
