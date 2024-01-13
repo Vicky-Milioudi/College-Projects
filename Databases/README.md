@@ -53,12 +53,7 @@
 </details>
 
 ### 3.1 Entity Relation Diagram
-🔜 *[Coming Soon]* Designed in Figma
-![ERD]()
-
-### 3.2 Relational Database Schema
-🔜 *[Coming Soon]* Designed in Figma
-![RM]()
+![ERD](images/ER.png)
 
 ## 4. Tools Used
 <p align="left">   
@@ -70,7 +65,3 @@
 <img src="https://upload.vectorlogo.zone/logos/visualstudio_code/images/a4381320-f83c-4a29-9db3-b241c1d096b1.svg" alt="figma" width="45" height="45"/> 
 <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> 
 </p>
-
-##  5. Demo
-🔜 *[Coming Soon]* `Check out the Demo!▶️`
-
