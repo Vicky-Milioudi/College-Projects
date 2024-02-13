@@ -1,0 +1,22 @@
+\begin{lstlisting}
+---------- CREATE INDEXES ----------
+USE omada8;
+
+---------- #1 create secretary full name index ----------
+CREATE INDEX secretary_fullName_idk 
+ON secretary(firstName, lastName);
+
+---------- #2 create driver full name index ----------
+CREATE INDEX driver_fullName_idk ON driver(firstName, lastName);
+
+---------- #3 create client full name index ----------
+CREATE INDEX client_fullName_idk ON client(firstName, lastName);
+
+---------- #4 create delivery address index ----------
+CREATE INDEX delivery_dAddress_idk 
+ON delivery(dCity, dStreet, dNumber);
+
+---------- #5 create pick-up address index ----------
+CREATE INDEX delivery_pAddress_idk 
+ON delivery(pCity, pStreet, pNumber);
+\end{lstlisting}
