@@ -16,7 +16,7 @@
 📄 As a part of our university curriculum, we made this project for "Databases (DB)". This project combines theory with practical **_SQL_** implementation. In this project, I collaborated with my team (**Nefeli & Thanasis 🫂**) to develop a <i>real-world</i> 📦🚛 Moving Company Management System for a small business
 
 ## 2. Project Overview
-🎯We started by designing the  `Entity-Relationship Diagram [ERD]`, then created the `Relational Model [RM]`, and finally implemented the project using *phpMyAdmin*. The project involved the creation of multiple tables and meticulous data management in MySQL. The project included making *tables*, *views*, *indexes*, *transactions*, *cursors*, *triggers*, and *stored procedures* in MySQL. We also developed a `dynamic website`.
+🎯We started by designing the  `Entity-Relationship Diagram [ERD]`, then created the `Relational Model [RM]`, and finally implemented the project. The project involved the creation of multiple tables and meticulous data management in MySQL. The project included making *tables*, *views*, *indexes*, *transactions*, *cursors*, *triggers*, and *stored procedures* in MySQL. We also developed a `dynamic website`.
 
 ## 3. Basic Structure
 <details>
