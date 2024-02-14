@@ -48,7 +48,7 @@
 <ins>Attributes: id, amount, method, date</ins>
 </details>
 
-### 3.1 Entity Relation Diagram
+### Entity Relation Diagram
 ![ERD](images/ER.png)
 
 ## 4. Tools Used
