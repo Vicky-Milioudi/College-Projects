@@ -38,9 +38,9 @@ The project is divided into **3** parts:
     Loop Tilling was the optimization technique with the best metrics.
    </details>
 
-  <div id='part2'/>
+  
   <details>  
-  <summary><h3>Part 2 - Memory Hierarchy</h3></summary>
+  <summary><h3>Part 2 - Memory Hierarchy <div id='part2'/> </h3></summary>
   
   Building on the best version from Part 1, we implement different memory hierarchies and measure the trade-offs between memory size, speed, and execution time:
   - Adjust memory size based on ZI data.
@@ -50,9 +50,8 @@ The project is divided into **3** parts:
   Memory configurations were implemented using: `scatter.txt`, `memory.map`, and `stack.c`.
 </details>
 
-<div id='part3'/>
 <details>
-<summary><h3>Part 3 - Data Reusability</h3></summary>
+<summary><h3>Part 3 - Data Reusability<div id='part3'/></h3></summary>
 
  We introduce buffers to reduce memory calls and decrease   `total`, `waiting`, and `true idle` cycles by temporarily storing parts of large arrays:
   - Use the current line buffer technique.
