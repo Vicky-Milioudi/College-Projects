@@ -26,22 +26,28 @@ The following images display the results of applying the Deriche smoothing filte
 The project is divided into **3** parts:
 
  <details>  
- <summary><h3>Part 1 - Algorithm Implementation, Loop Transformations/Optimizations <div id='part1'/> </h3></summary>
-
+	 <summary>
+		<h3>
+			<div id='part1'/>
+				Part 1 - Algorithm Implementation, Loop Transformations/Optimizations
+		</h3>
+	</summary>
+        
   In the first part of the project we assume ideal memory and we
   - Implement the **Deriche Smoothing Filter**
   - Test Different **Loop transformations**
-    - **Loop Unrolling**: Small loops can be unrolled for higher performance, even though the code size is increased. When a loop is unrolled, a loop counter needs to be updated less often and fewer branches are executed. The step for unrolling should not pass a certain number because then we only increase code size with no reduction in metrics.
-    - **Loop Fusion**: Two loops merge into one benefitting from parallelism and data reuse. Note that the loops need to have the same number of iterations in order to merge.
-    - **Loop interchange**: In loop interchange, the order of the nested for() changes. This happens to ensure that the elements of a multidimensional array are accessed in the order that are located in memory improving locality.
-    - **Loop Inversion**: Use while() instead of for() and then if-do-while() instead of while(). 
     Loop Tilling was the optimization technique with the best metrics.
    </details>
 
   
   <details>  
-  <summary><h3>Part 2 - Memory Hierarchy <div id='part2'/> </h3></summary>
-  
+  	<summary>
+  		<h3>
+			<div id='part2'/>
+				Part 2 - Memory Hierarchy
+				</h3>
+	</summary>
+        
   Building on the best version from Part 1, we implement different memory hierarchies and measure the trade-offs between memory size, speed, and execution time:
   - Adjust memory size based on ZI data.
   - Experiment with varying read/write access times.
@@ -51,14 +57,19 @@ The project is divided into **3** parts:
 </details>
 
 <details>
-<summary><h3>Part 3 - Data Reusability<div id='part3'/></h3></summary>
+	<summary>
+		<h3>
+			<div id='part3'/>
+				Part 3 - Data Reusability
+		</h3>
+	</summary>
 
  We introduce buffers to reduce memory calls and decrease   `total`, `waiting`, and `true idle` cycles by temporarily storing parts of large arrays:
   - Use the current line buffer technique.
   - Apply the block buffer technique.
   - Combine both techniques (current line and block buffers).
   - Place buffers in the fastest available memory.
+  </details>
   
   ### **Presentation**
   A brief presentation summarizing the topics covered in Part 1, Part 2, and Part 3, along with the conclusions.
-  </details>
