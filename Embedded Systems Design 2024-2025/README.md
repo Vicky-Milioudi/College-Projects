@@ -24,9 +24,9 @@ The following images display the results of applying the Deriche smoothing filte
 
 ## 3. Basic Structure
 The project is divided into **3** parts:
-<div id='part1'/>
+
  <details>  
- <summary><h3>Part 1 - Algorithm Implementation, Loop Transformations/Optimizations</h3></summary>
+ <summary><h3>Part 1 - Algorithm Implementation, Loop Transformations/Optimizations <div id='part1'/> </h3></summary>
 
   In the first part of the project we assume ideal memory and we
   - Implement the **Deriche Smoothing Filter**
