@@ -39,7 +39,6 @@ The project is divided into **3** parts:
    </details>
 
   <div id='part2'/>
-  
   <details>  
   <summary><h3>Part 2 - Memory Hierarchy</h3></summary>
   
@@ -52,7 +51,6 @@ The project is divided into **3** parts:
 </details>
 
 <div id='part3'/>
-
 <details>
 <summary><h3>Part 3 - Data Reusability</h3></summary>
 
